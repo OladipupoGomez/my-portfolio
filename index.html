@@ -27,7 +27,7 @@
     />
 
     <!-- Google / Search Engine Tags -->
-<meta itemprop="name" content="Syed Mohsin's Portfolio">
+<meta itemprop="name" content="My Portfolio">
 <meta itemprop="description" content="Welcome to my portfolio website. I am a Devops and Cloud Engineer. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
 
 <!-- Reference screenshot of updated site's header in place of content -->
@@ -101,6 +101,10 @@
           </li>
         </ol>
       </nav>
+      <label class="theme-switch" for="theme-switch">
+      <span><h3>Dark Theme</h3></span>
+        <input type="checkbox" id="theme-switch" role="switch"/>
+      </label>
 
       <div class="container">
         <div class="header-textbox">
@@ -124,49 +128,41 @@
       </div>
     </header>
 
-    <main>
+
       <section class="client">
-        <div class="container">
+        <div class="text-above-images">
           <h2 class="h2">Certified by</h2>
-          <div class="logos">
+          <div class="image-container">
             <!-- Replace alt with client/company name and src attributes of images with path to relative img of client logo -->
-            <div class="logo-group">
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/azure.png"
-                alt="Ideacraft"
-                class="logo hide to-top"
-              />
+            <img src="assets/images/trusted-by/azure.png" alt="Image 1">
+            <img src="assets/images/trusted-by/aws_logo_smile_1200x630.png" alt="Image 2">
 
-              <img
-                loading="lazy"
+              <!--img
                 src="assets/images/trusted-by/azure.png"
-                alt="Golden grid"
-                class="logo"
-              />
-
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/aws_logo_smile_1200x630.png"
-                alt="Theia"
+                alt="azure"
                 class="logo hide to-bottom"
               />
-            </div>
-            <!--div class="logo-group">
+
               <img
-                loading="lazy"
-                src="assets/images/trusted-by/gm.svg"
-                alt="General motors"
+                src="assets/images/trusted-by/aws_logo_smile_1200x630.png"
+                alt="awslogo"
+                class="logo hide to-top"
+              />
+
+              <div class="logo-group"></div>
+              <img
+                src="assets/images/trusted-by/aws_logo_smile_1200x630"
+                alt="aws_logo_smile_1200x630"
                 class="logo hide to-top"
               />
 
               <img
-                loading="lazy"
-                src="assets/images/trusted-by/shares.svg"
-                alt="Chippy"
-                class="logo"
+
+                src="assets/images/trusted-by/azure.png"
+                alt="azure"
+                class="logo hide to-bottom"
               />
-              <img
+              <!--img
                 loading="lazy"
                 src="assets/images/trusted-by/shopify.svg"
                 alt="Shopify"
@@ -486,7 +482,7 @@
                  <img src="assets/images/skills/aws_logo_smile_1200x630.png" alt="aws_logo_smile_1200x630" class="skills-img" loading="lazy" title="awslogo">
                  <img src="assets/images/skills/cloud computing.jpg" alt="cloud computing" class="skills-img" loading="lazy" title="cloud computing">
                  <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
-                 <img src="assets/images/skills/" alt="CICD" class="skills-img" loading="lazy" title="CICD">
+                 <img src="assets/images/skills/cicd.png" alt="CICD" class="skills-img" loading="lazy" title="CICD">
                  <!--img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript"-->
             </figure>
           </div>
@@ -706,10 +702,6 @@
               </li-->
             </ol>
           </nav>
-          <label class="theme-switch" for="theme-switch">
-            <span>Dark Theme</span>
-            <input type="checkbox" id="theme-switch" role="switch"/>
-          </label>
         </div>
       </div>
     </footer>

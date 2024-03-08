@@ -3,7 +3,7 @@
 /* --------------------------------- */
 
 @font-face {
-  font-family: "Mona Sans";
+  font-family: "monospace";
   src: url("assets/fonts/Mona-Sans.woff2") format("woff2 supports variations"),
     url("assets/fonts/Mona-Sans.woff2") format("woff2-variations");
   font-display: swap;
@@ -22,7 +22,7 @@
 
   --gradient-brand: radial-gradient(
       at 60% 31%,
-      rgb(255, 131, 139) 0px,
+      rgb(192, 68, 76) 0px,
       transparent 50%
     ),
     radial-gradient(at 48% 98%, rgba(0, 255, 166, 0.707) 0px, transparent 50%),
@@ -80,7 +80,7 @@ body.light {
 }
 
 html {
-  font-family: "Mona Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   scroll-padding-top: var(--scroll-padding);
 }
@@ -336,7 +336,7 @@ body.dark .link::after {
 }
 
 body.light .link::before {
-  background-color: lightgray;
+  background-color: black;
 }
 
 body.light .link::after {
@@ -889,7 +889,7 @@ body.dark .work-links img {
   margin-block-start: var(--gutter-x-large);
   list-style-type: none;
   background-image: linear-gradient(
-    rgba(88, 88, 88, 0.297),
+    rgba(192, 99, 99, 0.297),
     rgba(214, 214, 214, 0.082)
   );
 }
@@ -946,7 +946,7 @@ body.dark .work-links img {
 /* --------------------------------- */
 
 .skills-imgs {
-  display: flex;
+  display: inline-flex;
   flex-flow: row wrap;
   justify-content: center;
   gap: var(--gutter-x-large);
@@ -1158,7 +1158,7 @@ body.light .signatures {
 
 .footer-links {
   display: flex;
-  gap: var(--gutter-small);
+  gap: var(--gutter-x-small);
   list-style-type: none;
 }
 
@@ -1206,6 +1206,7 @@ body.dark .footer-link img {
 
   --thumb-color: var(--thumb);
   --thumb-color-highlight: var(--thumb-highlight);
+
 }
 
 .theme-switch {
@@ -1252,4 +1253,20 @@ body.dark .footer-link img {
 input:checked {
   --thumb-position: 100%;
   background-color: var(--track-active);
+}
+
+.image-container {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Space between images */
+  align-items: center; /* Center items vertically */
+}
+
+.image-container img {
+  max-width: 100%; /* Make sure images don't exceed container width */
+  margin-right: 20px; /* Adjust as needed for spacing between images */
+  max-height: 100px;
+  margin-top: 70px;
+}
+.text-above-images {
+  margin-bottom: 0; /* Remove default margin-bottom */
 }
