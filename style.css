@@ -481,13 +481,15 @@ main {
 }
 
 body.dark .header {
-  background-image: linear-gradient(#0000008b, #000008),
-    url("assets/images/pexels-bella-white-635279.jpg");
+  background-image: linear-gradient(#20202000, #120222e8),
+    url("assets/images/hero-bg-light.webp");
+    color: #fffefe;
 }
 
 body.light .header {
   background-image: linear-gradient(#f5a7a7a2, #dcdaf3a1),
     url("assets/images/hero-bg-light.webp");
+    color: #000000;
 }
 
 .header-textbox {
@@ -1269,4 +1271,25 @@ input:checked {
 }
 .text-above-images {
   margin-bottom: 0; /* Remove default margin-bottom */
+}
+.rating-container{
+display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.rating-container {
+    font-size: 2rem;
+}
+
+.star {
+    cursor: pointer;
 }

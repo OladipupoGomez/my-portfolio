@@ -112,3 +112,17 @@ logosWrappers.forEach(async (logoWrapper, i) => {
 });
 
 yearEl.textContent = new Date().getFullYear();
+
+function rate(stars) {
+  // Reset all stars to default color
+  let allStars = document.querySelectorAll('.star');
+  allStars.forEach(star => star.style.color = '');
+
+  // Change the color of the clicked stars to gold
+  for (let i = 0; i < stars; i++) {
+      allStars[i].style.color = 'gold';
+  }
+
+  // Log the rating to the console
+  console.log(`User rated ${stars} stars.`);
+}
