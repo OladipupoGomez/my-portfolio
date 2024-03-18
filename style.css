@@ -487,8 +487,8 @@ body.dark .header {
 }
 
 body.light .header {
-  background-image: linear-gradient(#f5a7a7a2, #dcdaf3a1),
-    url("assets/images/hero-bg-light.webp");
+  background-image: linear-gradient(#ffffffa2, #dcdaf3a1),
+    url("assets/images/pexels-pixabay-53594.jpg");
     color: #000000;
 }
 
